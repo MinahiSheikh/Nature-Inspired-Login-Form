@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Cut Login - Minahil Sheikh</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("YOUR_PUBLIC_KEY"); // Yahan apni EmailJS Public Key dalein
+        })();
+    </script>
+</head>
+
+<body>
+
+    <div class="login-card">
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2>Log in</h2>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <label>Login, email or phone number</label>
+                    <input type="text" name="user_email" required placeholder="Enter email or phone">
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" name="user_password" id="password" required placeholder="Enter password">
+
+                    <!-- Custom SVG Eye Icon -->
+                    <span class="toggle-password" id="togglePassword">
+                        <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="#3b5343" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </span>
+                </div>
+
+                <button type="submit" class="login-btn">Log in</button>
+
+                <div class="social-text">or log in with</div>
+                <div class="social-icons">
+                    <!-- Google Icon -->
+                    <a href="https://www.linkedin.com/in/minahilsheikh09" target="_blank" class="icon-box"
+                        title="LinkedIn">
+                        <img src="google.svg" alt="Google" width="20" height="20">
+                    </a>
+
+                    <!-- Microsoft Icon -->
+                    <a href="https://www.youtube.com/@skillifyvarsity17" target="_blank" class="icon-box"
+                        title="YouTube">
+                        <img src="microsoft.svg" alt="Microsoft" width="20" height="20">
+                    </a>
+                </div>
+
+                <div class="forgot-link">
+                    <a href="#">Forgot login or password?</a>
+                </div>
+            </form>
+
+            <!-- Bottom Developer Credit -->
+            <div class="dev-badge">Developed by <span>Minahil Sheikh</span> | Full Stack Web Developer</div>
+        </div>
+
+        <!-- Visual Leaf Background Section -->
+        <div class="visual-section"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
